@@ -1,0 +1,415 @@
+/* Common styles */
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Resetting styles */
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.container {
+  padding: 0 16px 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* visited link */
+a:visited {
+  color: inherit;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* Visually-hidden pattern */
+
+a:link {
+  text-decoration: none;
+}
+
+.navigation-item-mb-menu.current {
+  color: #404bbf;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Header styles */
+
+.header-box {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 80%;
+  color: #007bff;
+}
+
+.logo-text-small {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.soc-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.soc-media-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 85vh;
+  background: url("images/bc.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0 20px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.hero button {
+  font-size: 1em;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+}
+
+/*         <!-- Change styles after this row --> */
+
+/* About activities */
+
+.about-activities {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 90px 0;
+  text-align: center;
+  align-items: center;
+}
+
+.about-activities-paragraph {
+  max-width: 600px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Contact find Us */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding-top: 60px;
+}
+
+.contact-form {
+  margin-top: 20px;
+  flex: 1;
+  margin-right: 20px;
+  max-width: 600px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form textarea {
+  height: 50px;
+}
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-left: 45%;
+}
+.contact-info {
+  font-weight: 600;
+  margin-top: 20px;
+  flex: 0, 5;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+}
+.contact-info p {
+  margin: 10px 0;
+}
+.spanContact-deteils {
+  font-style: inherit;
+  font-weight: 300;
+}
+.map-section {
+  margin-top: 40px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.map {
+  width: 100%;
+  margin-top: 2o;
+  height: 300px;
+  background-image: url(./images/Screenshot\ 2024-05-23\ at\ 13.54.13.png);
+  /* Add the path to your map background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.map .marker {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(3, 2, 2);
+  border-radius: 50%;
+  position: absolute;
+}
+.map .marker:nth-child(1) {
+  top: 30%;
+  left: 40%;
+}
+.map .marker:nth-child(2) {
+  top: 50%;
+  left: 60%;
+}
+.map .marker:nth-child(1) {
+  top: 70%;
+  left: 80%;
+}
+.address {
+  margin-top: 20px;
+
+  @media (max-width: 700px) {
+    .contact-section {
+      flex-direction: column;
+    }
+    .contact-form {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      padding: 10px;
+    }
+    .map-section h2 {
+      font-size: 1.5em;
+    }
+    .map {
+      height: 200px;
+    }
+  }
+}
+
+/* ---Contact find Us-- */
+
+/*         <!-- Change styles before this row --> */
+
+/* Footer */
+
+footer {
+  background-color: black;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0, 9;
+}
+/* Hover effect for socialIcons  */
+.socialIcons a:hover {
+  background-color: black;
+  transition: 0, 5s;
+}
+.socialIcons a:hover i {
+  color: white;
+  transition: 0, 5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: disc;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0px 5px;
+}
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}

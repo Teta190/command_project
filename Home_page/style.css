@@ -1,0 +1,530 @@
+/* Common styles */
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Resetting styles */
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.container {
+  padding: 0 16px 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* visited link */
+a:visited {
+  color: inherit;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* Visually-hidden pattern */
+
+a:link {
+  text-decoration: none;
+}
+
+.navigation-item-mb-menu.current {
+  color: #404bbf;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Header styles */
+
+.header-box {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 80%;
+  color: #007bff;
+}
+
+.logo-text-small {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.soc-media-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.soc-media-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 85vh;
+  background: url("images/bc_1.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0 20px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.hero button {
+  font-size: 1em;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero button:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+}
+
+/*         <!-- Change styles after this row --> */
+
+/* News section */
+
+.news-section {
+  padding: 60px 0 60px 0;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.news-title {
+  color: #040306;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  margin-bottom: 25px;
+}
+
+.news-grid {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: calc(100% * 9 / 3);
+  /* Adjust this if I add more articles */
+}
+.news-article {
+  width: calc(100% / 3);
+  /* 3 articles per view */
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.news-article img {
+  width: 100%;
+  height: 300px;
+  /* Set a fixed height for all images */
+  object-fit: cover;
+  /* Ensures the image covers the container */
+  border-radius: 10px;
+}
+
+.news-article > p {
+  margin-bottom: 10px;
+}
+
+.news-subtitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.news-link {
+  margin-top: 10px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+/* Feedback */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews {
+  background-color: #007bff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-title {
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  max-width: 335px;
+  margin-bottom: 25px;
+}
+
+.reviews-paragraph {
+  color: #fbfbfb;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  max-width: 335px;
+  margin-bottom: 40px;
+  opacity: 0.4;
+}
+
+.reviews-feedback-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  background: #fbfbfb;
+  padding: 32px 8px;
+  max-width: 335px;
+  align-items: center;
+}
+
+.second-item {
+  display: none;
+}
+
+.third-item {
+  display: none;
+}
+
+.customer-photo {
+  width: 56px;
+  height: 56px;
+  background-color: #0e1823;
+  border-radius: 72px;
+  margin-bottom: 24px;
+}
+
+.reviews-cust-name {
+  color: #040306;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.reviews-cust-text {
+  color: rgba(4, 3, 6, 0.4);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  max-width: 303px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .reviews {
+    padding-top: 76px;
+    padding-bottom: 75px;
+  }
+
+  .second-item {
+    display: flex;
+  }
+
+  .reviews-feedback-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .reviews-title {
+    font-size: 48px;
+    max-width: 704px;
+  }
+
+  .reviews-paragraph {
+    font-size: 14px;
+    line-height: 130%;
+    max-width: 571px;
+    margin-bottom: 75px;
+  }
+
+  .reviews-cust-text {
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .third-item {
+    display: flex;
+  }
+
+  .reviews-feedback-list {
+    gap: 26px;
+  }
+
+  .reviews-item {
+    padding: 32px 28px;
+    max-width: 376px;
+  }
+
+  .reviews-title {
+    max-width: 854px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .reviews-feedback-list {
+    gap: 32px;
+  }
+
+  .reviews-item {
+    padding: 32px 36px;
+    max-width: 392px;
+  }
+}
+
+/*         <!-- Change styles before this row --> */
+
+/* Footer */
+
+footer {
+  background-color: black;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0, 9;
+}
+/* Hover effect for socialIcons  */
+.socialIcons a:hover {
+  background-color: black;
+  transition: 0, 5s;
+}
+.socialIcons a:hover i {
+  color: white;
+  transition: 0, 5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: disc;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 0px 5px;
+}
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
