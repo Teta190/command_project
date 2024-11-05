@@ -145,6 +145,18 @@ a:link {
 .soc-media-list li:not(:last-child) {
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 
 /* Hero */
 .hero {
